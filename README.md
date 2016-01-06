@@ -7,8 +7,8 @@ Script to obtain cookies and sessionid
 
 
 <h1>Special thanks for</h1>
-<h4>Peter Nicholson</h4>
-<h4>http://www.hashbangcode.com/blog/netscape-http-cooke-file-parser-php</h4>
+- Peter Nicholson
+- http://www.hashbangcode.com/blog/netscape-http-cooke-file-parser-php
 
 <h1>License</h1>
 MIT-License
