@@ -35,8 +35,8 @@ if($SteamLogin->success){
 <b>error</b> and <b>success</b>
 
 <h1>Public Methods</h1>
-- login([$authcode, $twofactorcode]) - login to steam
-- view($url) - print page
+- <b>login([$authcode, $twofactorcode])</b> - login to steam
+- <b>view($url)</b> - print page
 
 <h1>Special thanks for</h1>
 - Peter Nicholson
