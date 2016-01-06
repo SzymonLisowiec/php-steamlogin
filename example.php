@@ -21,6 +21,8 @@ if($SteamLogin->success){
 	//You can view steamcommunity.com from created session
 	//$SteamLogin->view('http://steamcommunity.com/id/pandeu');
 	
+	//Sending tradeoffers: https://github.com/halipso/php-steam-tradeoffers
+	
 	if($SteamLogin->error != '') echo $SteamLogin->error;
 }else{
 	echo $SteamLogin->error;
