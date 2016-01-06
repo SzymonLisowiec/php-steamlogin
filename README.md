@@ -1,10 +1,12 @@
 # php-steamlogin
 Script to obtain cookies and sessionid
 
-<h1>Public Methods</h1>
-<h4>login([$authcode, $twofactorcode])</h4>
-<h4>view($url)</h4>
+<h1>Public Parameters</h1>
+error and success
 
+<h1>Public Methods</h1>
+-login([$authcode, $twofactorcode])
+-view($url)
 
 <h1>Special thanks for</h1>
 - Peter Nicholson
