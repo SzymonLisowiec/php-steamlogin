@@ -40,7 +40,7 @@ if($SteamLogin->success){
 - <b>login([$authcode, $twofactorcode])</b> - login to steam
 - <b>view($url)</b> - print page
 
-<h1>Special thanks for</h1>
+<h1>Special thanks to</h1>
 - Peter Nicholson
 - http://www.hashbangcode.com/blog/netscape-http-cooke-file-parser-php
 
