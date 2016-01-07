@@ -8,12 +8,12 @@ class SteamLogin {
 	public $error = false;
 	public $success = false;
 	
-	private $config = [
+	private $config = array(
 		'username' => '',
 		'password' => '',
-		'datapath' => '',
-	];
-	private $accountdata = [];
+		'datapath' => ''
+	);
+	private $accountdata = array();
 	
 	public function __construct($config){
 		$this->config = $config;
@@ -66,11 +66,11 @@ class SteamLogin {
 				}
 			}else{
 				preg_match_all('#g_sessionID\\s\=\\s\"(.*?)\"\;#si', $this->view('http://steamcommunity.com/id'), $matches);
-				return [
+				return array(
 					'steamid' => $login->transfer_parameters->steamid,
 					'sessionId' => $matches[1][0],
 					'cookies' => $this->cookiejarToString(file_get_contents('cookiejar.txt'))
-				];
+				);
 			}
 			return $login;
 		}else $this->error('Bad RSA!');
@@ -111,16 +111,16 @@ class SteamLogin {
 	}
 	
 	private function cookiejarToString($string){
-    $cookieString = '';
-    $lines = explode("\n", $string);
-    foreach($lines as $line){
+		$cookieString = '';
+		$lines = explode("\n", $string);
+		foreach($lines as $line){
 			if(isset($line[0]) && substr_count($line, "\t") == 6){
 				$tokens = explode("\t", $line);
 				$tokens = array_map('trim', $tokens);
 				$cookieString .= $tokens[5].'='.$tokens[6].'; ';
 			}
-    }
-    return $cookieString;
+		}
+		return $cookieString;
 	}
 	
 	private function error($error){
