@@ -6,19 +6,19 @@ Script to obtain steamid, cookies and sessionid.
 <?php
 define('php-steamlogin', true);
 require('main.php');
-$SteamLogin = new SteamLogin([
+$SteamLogin = new SteamLogin(array(
 	'username' => '',
 	'password' => '',
 	'datapath' => dirname(__FILE__) //path to saving cache files
-]);
+));
 if($SteamLogin->success){
 	$logindata = $SteamLogin->login();
 	/*
-	$logindata = [
+	$logindata = array(
 		'steamid' => 'xxx', //64-bit
 		'sessionId' => 'xxx',
 		'cookies' => 'xxx=xxx; yyy=yyy; '
-	];
+	);
 	*/
 	
 	//You can view steamcommunity.com from created session
