@@ -56,7 +56,7 @@ class SteamLogin {
 			if($login->success == false){
 				if(isset($login->emailsteamid) && $login->emailauth_needed == true){
 					if($authcode == ''){
-						file_put_contents($this->config['datapath'].'/logindata.json', json_encode(['steamid' => $login->emailsteamid]));
+						file_put_contents($this->config['datapath'].'/logindata.json', json_encode(array('steamid' => $login->emailsteamid)));
 						$this->error('Please enter AUTHCODE available in your e-mail inbox (domain: '.$login->emaildomain.').');
 					}else $this->error('You enter bad authcode!');
 				}else if($login->requires_twofactor == true){
