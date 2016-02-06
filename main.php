@@ -69,7 +69,7 @@ class SteamLogin {
 				return array(
 					'steamid' => $login->transfer_parameters->steamid,
 					'sessionId' => $matches[1][0],
-					'cookies' => $this->cookiejarToString(file_get_contents($this->config['datapath'].'cookiejar.txt'))
+					'cookies' => $this->cookiejarToString(file_get_contents($this->config['datapath'].'/cookiejar.txt'))
 				);
 			}
 			return $login;
