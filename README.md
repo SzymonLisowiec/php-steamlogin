@@ -22,7 +22,7 @@ if($SteamLogin->success){
 	*/
 	
 	//You can view steamcommunity.com from created session
-	//$SteamLogin->view('http://steamcommunity.com/id/pandeu');
+	//$SteamLogin->view('http://steamcommunity.com/id/Kysune');
 	
 	//Sending tradeoffers: https://github.com/halipso/php-steam-tradeoffers
 	
