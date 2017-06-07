@@ -1,7 +1,7 @@
 # php-steamlogin
 Script to obtain steamid, cookies and sessionid.
 
-<h1>Example</h1>
+## Example
 ```php
 <?php
 define('php-steamlogin', true);
@@ -33,16 +33,17 @@ if($SteamLogin->success){
 ?>
 ```
 
-<h1>Public Parameters</h1>
-<b>error</b> and <b>success</b>
+## Public Parameters
+- error
+- success
 
-<h1>Public Methods</h1>
-- <b>login([$authcode, $twofactorcode])</b> - login to steam
-- <b>view($url)</b> - print page
+## Public Methods
+- ***login([$authcode, $twofactorcode])*** - login to steam
+- ***view($url)*** - print source of $url
 
-<h1>Special thanks to</h1>
+## Special thanks to
 - Peter Nicholson
 - http://www.hashbangcode.com/blog/netscape-http-cooke-file-parser-php
 
-<h1>License</h1>
+## License
 MIT-License
